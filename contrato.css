@@ -1,0 +1,113 @@
+
+body {
+    background-image: url("img/show2.jpg");
+    background-position: 30% 45%;
+    background-size: cover;
+}
+
+
+.container {
+    font-size: 1vw;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #d3c5f1;
+    border: 0;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+/* Responsive layout for medium-sized screens */
+.col-md-8 {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #8d56fd;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 2vw;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Active button styling */
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+/* Active button focus effect */
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5), 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for form title */
+h2.text-center {
+    margin-bottom: 30px;
+}
+
+/* Styling for input fields */
+.form-control {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Styling for date input */
+input[type="date"] {
+    height: 40px;
+}
+
+/* Button block styling */
+.btn-block {
+    width: 100%;
+}
+
+/* Responsive styles */
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+    .col-md-8 {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

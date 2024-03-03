@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Show Time</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/slit-slider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header" height="50">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <div class="navbar-brand">
+                    <a href="#body"><img src="img/pavao.png" height="30"></a>
+                </div>
+            </div>
+
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <ul id="nav" class="nav navbar-nav">
+                    <li><a href="#body">Home</a></li>
+                    <li><a href="#service">Serviços</a></li>
+                    <li><a href="#testimonials">Testemunhas</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <main class="site-content" role="main">
+
+			<section id="inicial">
+				<div class="tela"></div>
+					<h1> Show Time<h1>
+					<h2>Contrate seus artistas preferidos agora mesmo!</h2>
+					<h3 class="sub_manchete" >Artistas Exclusivos: Transforme Seu Evento em um Espetáculo Memorável</h3>
+					<form id="form">
+						<input
+							autofocus
+							id="search"
+							type="text"
+							placeholder="Insira o nome do artista ou da música..."
+						/>
+						<button>Buscar</button>
+				  
+					<ul id="songs-container" class="songs-container songs"></ul>
+				  
+					<div id="prev-and-next-container" class="prev-and-next-container"></div>
+
+					<script src="./apiart.js"></script>
+
+					</form>
+					<div class="contratar">
+						<form action="contract.html">
+							<button type="submit">Contratar agora</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+            <section id="about" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-md-offset-1 wow animated fadeInLeft">
+							<div class="welcome-block">
+								<h3>Sobre o Show Time</h3>
+								<div class="message-body">
+									<img src="img/ShowTime.png" class="pull-left" alt="member">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+								</div>
+								<a href="#" class="btn btn-border btn-effect pull-right">Mais</a>
+							</div>
+						</div>
+						<div class="col-md-4 wow animated fadeInRight">
+							<div class="recent-works">
+								<h3>Notícias Recentes</h3>
+								<div id="works">
+									<div class="work-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> <br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+									<div class="work-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+									<div class="work-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="service">
+				<div class="container">
+					<div class="row">
+						<div class="sec-title text-center">
+							<h2 class="wow animated bounceInLeft">Services</h2>
+							<p class="wow animated bounceInRight">Lorem ipsum dolor sit amet</p>
+						</div>
+						
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-headphones fa-3x"></i>
+								</div>
+								<h3>Orquestras Sinfônicas</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-database fa-3x"></i>
+								</div>
+								<h3>Cantores</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-usd fa-3x"></i>
+								</div>
+								<h3>Bandas</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-lock fa-3x"></i>
+								</div>
+								
+								<h3>Grupos</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+            <section id="testimonials" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+						
+							<div class="sec-title text-center white wow animated fadeInDown">
+								<h2>Testemunhas</h2>
+							</div>
+							
+							<div id="testimonial" class=" wow animated fadeInUp">
+								<div class="testimonial-item text-center">
+									<img src="img/Carol.png" alt="Our Clients">
+									<div class="clearfix">
+										<span>Carol Gomes</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed sapien quis quam faucibus sagittis. Nulla a auctor enim. Aenean convallis condimentum ante. Nulla porttitor, libero non sollicitudin cursus, risus velit rutrum lorem, vel consequat odio diam vitae elit.</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/Roger.png" alt="Our Clients">
+									<div class="clearfix">
+										<span>Rogério Silva</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed sapien quis quam faucibus sagittis. Nulla a auctor enim. Aenean convallis condimentum ante. Nulla porttitor, libero non sollicitudin cursus, risus velit rutrum lorem, vel consequat odio diam vitae elit.</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/mulher1.png" alt="Our Clients">
+									<div class="clearfix">
+										<span>Yoon Se-ri</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed sapien quis quam faucibus sagittis. Nulla a auctor enim. Aenean convallis condimentum ante. Nulla porttitor, libero non sollicitudin cursus, risus velit rutrum lorem, vel consequat odio diam vitae elit.</p>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" >
+				<div class="container">
+					<div class="row">
+						
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Contact</h2>
+							<p>Lorem ipsum dolor</p>
+						</div>
+						<div class="col-md-7 contact-form wow animated fadeInLeft">
+							<form action="#" method="post">
+								<div class="input-field">
+									<input type="text" name="name" class="form-control" placeholder="Full name">
+								</div>
+								<div class="input-field">
+									<input type="email" name="email" class="form-control" placeholder="Your email">
+								</div>
+								<div class="input-field">
+									<input type="text" name="subject" class="form-control" placeholder="Subject">
+								</div>
+								<div class="input-field">
+									<textarea name="message" class="form-control" placeholder="Your message"></textarea>
+								</div>
+						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
+							</form>
+						</div>
+						
+						<div class="col-md-5 wow animated fadeInRight">
+							<address class="contact-details">
+								<h3>Contact Us</h3>						
+								<p><i class="fa fa-pencil"></i>Show Time Inc.<span>ZIP 12345</span> <span>São José do Rio Preto, SP </span><span>Brasil</span></p><br>
+								<p><i class="fa fa-phone"></i>Phone: (123) 567-8910 </p>
+								<p><i class="fa fa-envelope"></i>showtime@studio.com</p>
+							</address>
+						</div>
+			
+					</div>
+				</div>
+			</section>
+            <section id="google-map">
+				<div id="map-canvas" class="wow animated fadeInUp"></div>
+			</section>
+
+
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<div class="wow animated fadeInDown">
+							<p>Subscribe newsletter</p>
+							<p>Lorem ispum dolor sit amet</p>
+						</div>
+						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+							<div class="input-field">
+								<input type="email" class="subscribe form-control" placeholder="Enter email">
+								<button type="submit" class="submit-icon">
+									<i class="fa fa-envelope fa-lg"></i>
+								</button>
+							</div>
+						</form>
+						<div class="footer-social">
+							<ul>
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-pinterest fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+							</ul>
+						</div>
+						
+						<p>Copyright &copy; 2023 by Letícia </p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contrato.css">
+    <title>Contratar Artista</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contratar Artista</title>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="text-center mb-4">Contrate um Artista</h1>
+                    <form id="contractForm">
+                        <div class="form-group">
+                            <label for="artistName">Nome do Artista:</label>
+                            <input type="text" class="form-control" id="artistName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="artistId">ID do Artista:</label>
+                            <input type="text" class="form-control" id="artistId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="employerName">Nome do Contratante:</label>
+                            <input type="text" class="form-control" id="employerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fee">Cache:</label>
+                            <input type="number" class="form-control" id="fee" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Data do Evento:</label>
+                            <input type="date" class="form-control" id="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventLocation">Endereço do Evento:</label>
+                            <input type="text" class="form-control" id="eventLocation" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Salvar Contrato</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const contractForm = document.getElementById('contractForm');
+                contractForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const artistName = document.getElementById('artistName').value;
+                    const artistId = document.getElementById('artistId').value;
+                    const contractorName = document.getElementById('employerName').value;
+                    const cache = document.getElementById('fee').value;
+                    const eventDate = document.getElementById('eventDate').value;
+                    const address = document.getElementById('eventLocation').value;
+    
+                    submitContract(artistName, artistId, contractorName, cache, eventDate, address);
+                });
+            });
+    
+            function submitContract(artistName, artistId, contractorName, cache, eventDate, address) {
+                console.log("Dados do contrato enviados:");
+                console.log("Nome do Artista:", artistName);
+                console.log("ID do Artista:", artistId);
+                console.log("Nome do Contratante:", contractorName);
+                console.log("Cache:", cache);
+                console.log("Data do Evento:", eventDate);
+                console.log("Endereço do Evento:", address);
+    
+                alert(`Contratação do artista ${artistName} realizada com sucesso por ${contractorName} para o evento em ${eventDate} no endereço ${address}. Cachê: ${cache}`);
+            }
+        </script>
+    </body>
+    </html>
